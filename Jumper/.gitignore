@@ -1,0 +1,10 @@
+*.yml
+*.ld
+*.bat
+tsc
+test*
+ldoc*
+telescope*
+hkl
+debug*
+profiler*
