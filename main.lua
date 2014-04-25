@@ -15,7 +15,7 @@ local endy = 0       -- end y grid coordinate
 
 local bg = display.newRect( display.screenOriginX,
                             display.screenOriginY, 
-                           display.actualContentWidth, 
+                            display.actualContentWidth, 
                             display.actualContentHeight)
  
 bg.x = display.contentCenterX
@@ -62,7 +62,7 @@ end
 -- draw start position by using the pixel coordinates
 -- set the startx and starty grid coordinates
 function drawStart(xyPixelCoordinate, xyGridCoordinate)
-   local myText = display.newText( "A", xyPixelCoordinate.x, xyPixelCoordinate.y, "Avenir", 34 )
+   local myText = display.newText( "A", xyPixelCoordinate.x, xyPixelCoordinate.y, native.systemFont, 34 )
    myText:setFillColor( 255, 255, 255 )
    startx = xyGridCoordinate.x
    starty = xyGridCoordinate.y
@@ -71,7 +71,7 @@ end
 -- draw end position by using the pixel coordinates
 -- set the endx and endy grid coordinates
 function drawEnd(xyPixelCoordinate, xyGridCoordinate)
-   local myText = display.newText( "B", xyPixelCoordinate.x, xyPixelCoordinate.y, "Avenir", 34 )
+   local myText = display.newText( "B", xyPixelCoordinate.x, xyPixelCoordinate.y, native.systemFont, 34 )
    myText:setFillColor(255, 255, 255 )
    endx = xyGridCoordinate.x
    endy = xyGridCoordinate.y
